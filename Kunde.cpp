@@ -4,8 +4,7 @@ using namespace std;
 
 class Kunde
 {
-  public:   
+  public:
     string Kundenname;
     int Kundennummer;
-
 }

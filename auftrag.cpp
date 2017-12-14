@@ -1,7 +1,6 @@
-#include <vector>
-
 using namespace std;
 
-public class Auftrag extends {
-    private:
-	vector<Auftrag> subAuftraege;
+class Auftrag:Eckdaten {
+public:
+  Auftrag metaRef;
+}
