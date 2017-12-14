@@ -1,6 +1,8 @@
+#pragma once
 
+#include "auftrag.cpp"
 
-class FZArbeitstischeAuftrag
+class FZArbeitstischeAuftrag:Auftrag
 {
 
-}
+};

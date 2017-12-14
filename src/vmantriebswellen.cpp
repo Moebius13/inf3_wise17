@@ -1,4 +1,6 @@
+#pragma once
 
-class VMAntriebswellenAuftrag {
+#include "auftrag.cpp"
+class VMAntriebswellenAuftrag:Auftrag {
 
-}
+};

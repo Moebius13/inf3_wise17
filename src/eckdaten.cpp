@@ -1,10 +1,12 @@
+#pragma once
+
 #include <time.h>
 #include <string>
 
 struct Eckdaten
 {
-  struct time_t DLZ;
-  struct time_t Fertigungsbeginn;
-  struct time_t Deadline;
+  time_t DLZ;
+  time_t Fertigungsbeginn;
+  time_t Deadline;
   string Status;
 };

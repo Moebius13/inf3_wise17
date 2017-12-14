@@ -1,4 +1,6 @@
+#pragma once
 
-class VMSpindelnAuftrag {
+#include "auftrag.cpp"
+class VMSpindelnAuftrag:Auftrag {
 
-}
+};

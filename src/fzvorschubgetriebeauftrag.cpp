@@ -1,6 +1,8 @@
+#pragma once
 
+#include "auftrag.cpp"
 
-class FZVorschubgetriebeAuftrag
+class FZVorschubgetriebeAuftrag:Auftrag
 {
 
-}
+};

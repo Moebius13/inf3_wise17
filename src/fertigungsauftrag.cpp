@@ -1,6 +1,17 @@
+#pragma once
+#include "kunde.h"
+#include "produkt.cpp"
+#include "auftrag.cpp"
 
 class Fertigungsauftrag:Auftrag {
+private:
+  Produkt *Endprodukt;
+  Kunde *Auftraggeber;
 public:
-  Produkt Endprodukt;
-  Kunde Auftraggeber;
-}
+  Fertigungsauftrag(Produkt *P, Kunde *K)
+  {
+    Auftrag(NULL);
+    Auftraggeber=K;
+    Endprodukt=P;
+  }
+};
