@@ -5,12 +5,11 @@
 
 class Fertigungsauftrag:Auftrag {
 private:
-  Produkt *Endprodukt;
-  Kunde *Auftraggeber;
+  Produkt Endprodukt;
+  Kunde Auftraggeber;
 public:
-  Fertigungsauftrag(Produkt *P, Kunde *K)
+  Fertigungsauftrag(Produkt P, Kunde K):Auftrag(NULL)
   {
-    Auftrag(NULL);
     Auftraggeber=K;
     Endprodukt=P;
   }

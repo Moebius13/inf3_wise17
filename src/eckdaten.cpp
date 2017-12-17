@@ -8,5 +8,5 @@ struct Eckdaten
   time_t DLZ;
   time_t Fertigungsbeginn;
   time_t Deadline;
-  string Status;
+  std::string Status;
 };
