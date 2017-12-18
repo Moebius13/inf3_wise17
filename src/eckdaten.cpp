@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef _ECKDATEN
+#define _ECKDATEN
 #include <time.h>
 #include <string>
 
@@ -10,3 +10,4 @@ struct Eckdaten
   time_t Deadline;
   std::string Status;
 };
+#endif

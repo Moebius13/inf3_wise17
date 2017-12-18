@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _AUFTRAG
+#define _AUFTRAG
 #include "eckdaten.cpp"
 #include <iostream>
 #include <stdio.h>
@@ -7,12 +8,12 @@ using namespace std;
 
 class Auftrag:Eckdaten {
 private:
-  Auftrag& metaRef;
+  const Auftrag* metaRef;
 public:
   Auftrag(){
       metaRef=NULL;
   }//shutup compiler...
-  Auftrag(Auftrag& Ref){
+  Auftrag(const Auftrag* Ref){
 //  Eckdaten(); //not needed, no-arg constructor call is automatic if nothing else is goven
     metaRef = Ref;
   } 
@@ -21,3 +22,4 @@ public:
     printf("%p\n",metaRef);
   }
 };
+#endif

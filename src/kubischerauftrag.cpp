@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef _KUBISCH
+#define _KUBISCH
 #include "auftrag.cpp"
 #include "produkt.cpp"
 #include "fzmotorenauftrag.cpp"
@@ -9,10 +9,11 @@
 
 class KubischerAuftrag:Auftrag {
 private:
-  FZArbeitstischeAuftrag FZArbeitstische;
-  FZMotorenAuftrag FZMotoren;
-  FZStaenderAuftrag FZStaender;
-  FZVorschubgetriebeAuftrag FZVorschubgetriebe;
+  FZArbeitstischeAuftrag* FZArbeitstische;
+  FZMotorenAuftrag* FZMotoren;
+  FZStaenderAuftrag* FZStaender;
+  FZVorschubgetriebeAuftrag* FZVorschubgetriebe;
 public:
-  KubischerAuftrag(Produkt P):Auftrag(P){}
+  KubischerAuftrag(Produkt* P):Auftrag(P){}
 };
+#endif
