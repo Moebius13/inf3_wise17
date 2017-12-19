@@ -2,7 +2,7 @@
 #define _VORSCHUB
 #include "auftrag.cpp"
 
-class FZVorschubgetriebeAuftrag:Auftrag
+class GetriebeAuftrag:Auftrag
 {
 
 };

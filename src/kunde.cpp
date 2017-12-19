@@ -2,12 +2,11 @@
 #define _KUNDE_MAIN
 #include <iostream>
 #include <string>
-using namespace std;
 #include "kunde.h"
 #include "auftrag.cpp"
 #include "produkt.cpp"
 
-
+using namespace std;
 
 int main()
 {

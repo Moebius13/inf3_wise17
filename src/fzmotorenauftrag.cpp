@@ -2,7 +2,7 @@
 #define _MOTOREN
 #include "auftrag.cpp"
 
-class FZMotorenAuftrag:Auftrag
+class MotorAuftrag:Auftrag
 {
 
 };

@@ -9,7 +9,7 @@ class ElektroAuftrag:Auftrag {
 private:
     SchaltschrankAuftrag* Schaltschrank;
 public:
-    ElektroAuftrag(Produkt* P):Auftrag((Auftrag*) P){}
+    ElektroAuftrag(Produkt* P);
 
 };
 #endif

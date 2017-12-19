@@ -1,27 +1,28 @@
 #ifndef _PRODUKT
 #define _PRODUKT
 #include "auftrag.cpp"
-#include "drehteileauftrag.cpp"
-#include "kubischerauftrag.cpp"
-#include "elektroauftrag.cpp"
-#include "fertigungsauftrag.cpp"
+#include "drehteileauftrag.h"
+#include "kubischerauftrag.h"
+#include "elektroauftrag.h"
+class FertigungsAuftrag;
+
 class Produkt:Auftrag {
 private:
-    const DrehteileAuftrag* Drehteile;
+    const DrehteilAuftrag*  Drehteile;
     const KubischerAuftrag* Kubischer;
-    //extern ElektroAuftrag *Elektro;
+    const ElektroAuftrag*   Elektro;
 public:
-  Produkt(const Fertigungsauftrag* F):Auftrag(F){}
-  //appafriend rently this ^ is how to call superclass constructors according to stackoverflow - kinda wierd
-  friend void makeSub(){
-    Drehteile = new DrehteileAuftrag(this);
+  Produkt(const FertigungsAuftrag* F):Auftrag((Auftrag*)F){}
+  //apparently this ^ is how to call superclass constructors according to stackoverflow - kinda wierd
+  void makeSub(){
+    Drehteile = new DrehteilAuftrag(this);
     Kubischer = new KubischerAuftrag(this);
-    //Elektro = new ElektroAuftrag(this);
+    Elektro   = new ElektroAuftrag(this);
   }
   ~Produkt(){
     delete Drehteile;
     delete Kubischer;
-    //delete Elektro;
+    delete Elektro;
   }
 };
 #endif

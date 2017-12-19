@@ -14,6 +14,6 @@ private:
   StaenderAuftrag*     Staender;
   GetriebeAuftrag*     Vorschubgetriebe;
 public:
-  KubischerAuftrag(Produkt* P):Auftrag((Auftrag*)P){}
+  KubischerAuftrag(Produkt* P);
 };
 #endif

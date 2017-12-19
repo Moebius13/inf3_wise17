@@ -1,7 +1,7 @@
 #ifndef _SPINDELN
 #define _SPINDELN
 #include "auftrag.cpp"
-class VMSpindelnAuftrag:Auftrag {
+class SpindelAuftrag:Auftrag {
 
 };
 #endif

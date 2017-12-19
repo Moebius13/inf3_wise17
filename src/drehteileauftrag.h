@@ -1,7 +1,5 @@
-#ifndef _DREHTEIL
-#define _DREHTEIL
-#include "auftrag.cpp"
-//forward declaration
+#ifndef _DREHTEIL_H
+#define _DREHTEIL_H
 class Produkt;
 class WellenAuftrag;
 class SpindelAuftrag;
@@ -11,6 +9,6 @@ class DrehteilAuftrag:Auftrag {
     WellenAuftrag*  Antriebswellen;
     SpindelAuftrag* Spindeln;
   public:
-    DrehteilAuftrag(Produkt* P):Auftrag((Auftrag*)P){}
+    DrehteilAuftrag(Produkt* P);
 };
 #endif

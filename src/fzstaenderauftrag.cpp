@@ -2,7 +2,7 @@
 #define _STAENDER
 #include "auftrag.cpp"
 
-class FZStaenderAuftrag:Auftrag
+class StaenderAuftrag:Auftrag
 {
 
 };
