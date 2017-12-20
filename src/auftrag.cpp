@@ -20,7 +20,14 @@ class Auftrag: public Eckdaten {
 	    this->Status="Pending";
 	} 
 	time_t makeSub(const time_t startTime);
-	time_t* earliestDeadline();
+	void printTime(const char* prefix){
+	    int d,h,m,s;
+	    s=this->DLZ % 60;
+	    m=(this->DLZ / 60) % 60;
+	    h=(this->DLZ / 3600) % 24;
+	    d=this->DLZ / 86400;
+	    printf("%sDurchlaufzeit:%i Tage, %i:%i:%i Stunden\n",prefix,d,h,m,s);
+	}
 	void print(const char* prefix) {
 	    printf("%p\n",metaRef);
 	}

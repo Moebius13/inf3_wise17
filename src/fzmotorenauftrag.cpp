@@ -15,6 +15,8 @@ class MotorAuftrag:public Auftrag{
 	}
 	void print(const char* prefix){
 	    printf("%sMotor #%i[%s]\n",prefix,this,this->Status);
+	    printf("%sFertigungsbeginn: %s",prefix,ctime(&Fertigungsbeginn));
+	    printTime(prefix);
 	}
 };
 

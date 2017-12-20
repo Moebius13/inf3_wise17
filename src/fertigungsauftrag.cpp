@@ -18,6 +18,8 @@ class FertigungsAuftrag:public Auftrag {
 	}
 	void print(const char* prefix){
 	    printf("Fertigungsauftrag #%i für Produkt #%i[%s]\n",this,Endprodukt,this->Status);
+	    printf("%sFertigungsbeginn: %s",prefix,ctime(&Fertigungsbeginn));
+	    printTime(prefix);
 	    Endprodukt->print("|");
 	    printf("/\n");
 	}

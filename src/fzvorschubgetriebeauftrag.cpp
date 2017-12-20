@@ -15,6 +15,8 @@ class GetriebeAuftrag:public Auftrag{
 	}
 	void print(const char* prefix){
 	    printf("%sVorschubgetriebe #%i[%s]\n",prefix,this,this->Status);
+	    printf("%sFertigungsbeginn: %s",prefix,ctime(&Fertigungsbeginn));
+	    printTime(prefix);
 	}
 
 };
