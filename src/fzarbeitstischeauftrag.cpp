@@ -1,9 +1,14 @@
 #ifndef _ARBTISCH
 #define _ARBTISCH
-#include "auftrag.cpp"
+#include "auftrag.h"
 
-class ArbeitsTischAuftrag:Auftrag
-{
+class KubischerAuftrag;
 
+class ArbeitsTischAuftrag:public Auftrag{
+    public:
+	ArbeitsTischAuftrag(KubischerAuftrag* A):Auftrag((Auftrag*)A){
+	    DLZ=1*DAY_FACT;
+	}
 };
+
 #endif

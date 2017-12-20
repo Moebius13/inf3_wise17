@@ -1,15 +1,16 @@
 #ifndef _ELEKTRO
 #define _ELEKTRO
-#include "auftrag.cpp"
+#include "auftrag.h"
 
 class SchaltschrankAuftrag;
 class Produkt;
 
-class ElektroAuftrag:Auftrag {
-private:
-    SchaltschrankAuftrag* Schaltschrank;
-public:
-    ElektroAuftrag(Produkt* P);
+class ElektroAuftrag:public Auftrag {
+    private:
+	SchaltschrankAuftrag* Schaltschrank;
+    public:
+	ElektroAuftrag(Produkt* P);
 
 };
+
 #endif

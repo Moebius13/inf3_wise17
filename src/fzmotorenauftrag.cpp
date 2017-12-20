@@ -1,9 +1,14 @@
 #ifndef _MOTOREN
 #define _MOTOREN
-#include "auftrag.cpp"
+#include "auftrag.h"
 
-class MotorAuftrag:Auftrag
-{
+class KubischerAuftrag;
 
+class MotorAuftrag:public Auftrag{
+    public:
+	MotorAuftrag(KubischerAuftrag* A):Auftrag((Auftrag*)A){
+	    DLZ=1*DAY_FACT;
+	}
 };
+
 #endif

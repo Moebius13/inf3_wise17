@@ -1,7 +1,14 @@
 #ifndef _WELLE
 #define _WELLE
-#include "auftrag.cpp"
-class WellenAuftrag:Auftrag {
+#include "auftrag.h"
 
+class DrehteilAuftrag;
+
+class WellenAuftrag:public Auftrag {
+    public:
+	WellenAuftrag(DrehteilAuftrag* A):Auftrag((Auftrag*)A){
+	    DLZ=1*DAY_FACT;
+	}
 };
+
 #endif

@@ -1,5 +1,5 @@
-#ifndef _FERTIGUNG
-#define _FERTIGUNG
+#ifndef _FERTIGUNG_H
+#define _FERTIGUNG_H
 #include "auftrag.h"
 
 class Produkt;
@@ -10,10 +10,7 @@ class FertigungsAuftrag:public Auftrag {
 	Produkt* Endprodukt;
 	Kunde*   Auftraggeber;
     public:
-	FertigungsAuftrag(Produkt* P, Kunde* K):Auftrag(NULL){
-	    Auftraggeber=K;
-	    Endprodukt=P;
-	}
+	FertigungsAuftrag(Produkt* P, Kunde* K);
 };
 
 #endif

@@ -1,9 +1,14 @@
 #ifndef _STAENDER
 #define _STAENDER
-#include "auftrag.cpp"
+#include "auftrag.h"
 
-class StaenderAuftrag:Auftrag
-{
+class KubischerAuftrag;
 
+class StaenderAuftrag:public Auftrag{
+    public:
+	StaenderAuftrag(KubischerAuftrag* A):Auftrag((Auftrag*)A){
+	    DLZ=1*DAY_FACT;
+	}
 };
+
 #endif

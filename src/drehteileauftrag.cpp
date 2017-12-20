@@ -1,16 +1,27 @@
 #ifndef _DREHTEIL
 #define _DREHTEIL
-#include "auftrag.cpp"
-//forward declaration
-class Produkt;
-class WellenAuftrag;
-class SpindelAuftrag;
+#include "auftrag.h"
+#include "vmantriebswellen.h"
+#include "vmspindeln.h"
 
-class DrehteilAuftrag:Auftrag {
-  private:
-    WellenAuftrag*  Antriebswellen;
-    SpindelAuftrag* Spindeln;
-  public:
-    DrehteilAuftrag(Produkt* P):Auftrag((Auftrag*)P){}
+class Produkt;
+
+class DrehteilAuftrag:public Auftrag {
+    private:
+	WellenAuftrag*  Antriebswellen;
+	SpindelAuftrag* Spindeln;
+    public:
+	DrehteilAuftrag(Produkt* P):Auftrag((Auftrag*)P){
+	    this->DLZ=1*DAY_FACT;
+	}
+	void makeSub(){
+	    Antriebswellen = new WellenAuftrag(this);
+	    Spindeln = new SpindelAuftrag(this);
+	}
+	~DrehteilAuftrag(){
+	    delete Antriebswellen;
+	    delete Spindeln;
+	}
 };
+
 #endif
