@@ -20,7 +20,7 @@ class Auftrag: public Eckdaten {
 	} 
 	const void makeSub();
 	time_t* earliestDeadline();
-	void print() {
+	void print(const char* prefix) {
 	    printf("%p\n",metaRef);
 	}
 };

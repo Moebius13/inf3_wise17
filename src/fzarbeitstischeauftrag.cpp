@@ -9,6 +9,9 @@ class ArbeitsTischAuftrag:public Auftrag{
 	ArbeitsTischAuftrag(KubischerAuftrag* A):Auftrag((Auftrag*)A){
 	    DLZ=1*DAY_FACT;
 	}
+	void print(const char* prefix){
+	    printf("%sArbeitstisch #%i\n",prefix,this);
+	}
 };
 
 #endif

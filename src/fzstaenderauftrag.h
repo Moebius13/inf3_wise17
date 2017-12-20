@@ -1,3 +1,4 @@
+#ifndef STAENDER
 #ifndef STAENDER_H
 #define STAENDER_H
 #include "auftrag.cpp"
@@ -9,4 +10,5 @@ class StaenderAuftrag:public Auftrag{
 	StaenderAuftrag(KubischerAuftrag* A);
 };
 
+#endif
 #endif

@@ -9,6 +9,9 @@ class GetriebeAuftrag:public Auftrag{
 	GetriebeAuftrag(KubischerAuftrag* A):Auftrag((Auftrag*)A){
 	    DLZ=1*DAY_FACT;
 	}
+	void print(const char* prefix){
+	    printf("%sVorschubgetriebe #%i\n",prefix,this);
+	}
 
 };
 

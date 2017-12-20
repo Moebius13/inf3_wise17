@@ -1,3 +1,4 @@
+#ifndef DREHTEIL
 #ifndef DREHTEIL_H
 #define DREHTEIL_H
 #include "auftrag.cpp"
@@ -15,4 +16,5 @@ class DrehteilAuftrag:public Auftrag {
 	~DrehteilAuftrag();
 };
 
+#endif
 #endif

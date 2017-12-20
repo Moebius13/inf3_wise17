@@ -1,3 +1,4 @@
+#ifndef VORSCHUB
 #ifndef VORSCHUB_H
 #define VORSCHUB_H
 #include "auftrag.cpp"
@@ -10,4 +11,5 @@ class GetriebeAuftrag:public Auftrag{
 
 };
 
+#endif
 #endif

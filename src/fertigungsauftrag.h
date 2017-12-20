@@ -1,3 +1,4 @@
+#ifndef FERTIGUNG
 #ifndef FERTIGUNG_H
 #define FERTIGUNG_H
 #include "auftrag.cpp"
@@ -10,7 +11,9 @@ class FertigungsAuftrag:public Auftrag {
 	Produkt* Endprodukt;
 	Kunde*   Auftraggeber;
     public:
-	FertigungsAuftrag(Produkt* P, Kunde* K);
+	FertigungsAuftrag(Kunde* K);
+	setProdukt(Produkt* P);
 };
 
+#endif
 #endif

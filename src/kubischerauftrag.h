@@ -1,3 +1,4 @@
+#ifndef KUBISCH
 #ifndef KUBISCH_H
 #define KUBISCH_H
 #include "auftrag.cpp"
@@ -18,4 +19,5 @@ class KubischerAuftrag:public Auftrag {
 	KubischerAuftrag(Produkt* P);
 };
 
+#endif
 #endif

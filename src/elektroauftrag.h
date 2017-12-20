@@ -1,3 +1,4 @@
+#ifndef ELEKTRO
 #ifndef ELEKTRO_H
 #define ELEKTRO_H
 #include "auftrag.cpp"
@@ -13,4 +14,5 @@ class ElektroAuftrag:public Auftrag {
 	~ElektroAuftrag();
 };
 
+#endif
 #endif

@@ -1,3 +1,4 @@
+#ifndef WELLE
 #ifndef WELLE_H
 #define WELLE_H
 #include "auftrag.cpp"
@@ -9,4 +10,5 @@ class WellenAuftrag:public Auftrag {
 	WellenAuftrag(DrehteilAuftrag* A);
 };
 
+#endif
 #endif

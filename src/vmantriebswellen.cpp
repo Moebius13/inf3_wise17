@@ -9,6 +9,9 @@ class WellenAuftrag:public Auftrag {
 	WellenAuftrag(DrehteilAuftrag* A):Auftrag((Auftrag*)A){
 	    DLZ=1*DAY_FACT;
 	}
+	void print(const char* prefix){
+	    printf("%sAntriebswellenfertigungsauftrag #%i\n",prefix,this);
+	}
 };
 
 #endif

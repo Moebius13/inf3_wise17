@@ -9,6 +9,9 @@ class SchaltschrankAuftrag:public Auftrag {
 	SchaltschrankAuftrag(ElektroAuftrag* A):Auftrag((Auftrag*)A){
 	    DLZ=1*DAY_FACT;
 	}
+	void print(const char* prefix){
+	    printf("%sSchaltschrank #%i\n",prefix,this);
+	}
 };
 
 #endif

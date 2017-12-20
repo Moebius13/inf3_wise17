@@ -26,6 +26,15 @@ class Produkt:public Auftrag {
 	    Kubischer->makeSub();
 	    Elektro->makeSub();
 	}
+	void print(const char* prefix){
+	    printf("%sProdukt #%i\n",prefix,this);
+	    Drehteile->print("||");
+	    printf("%s/\n",prefix);
+	    Kubischer->print("||");
+	    printf("%s/\n",prefix);
+	    Elektro->print("||");
+	    printf("%s/\n",prefix);
+	}
 	~Produkt(){
 	    delete Drehteile;
 	    delete Kubischer;

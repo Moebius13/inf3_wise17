@@ -1,3 +1,4 @@
+#ifndef SCHALTSCHRANK
 #ifndef SCHALTSCHRANK_H
 #define SCHALTSCHRANK_H
 #include "auftrag.cpp"
@@ -9,4 +10,5 @@ class SchaltschrankAuftrag:public Auftrag {
 	SchaltschrankAuftrag(ElektroAuftrag* A);
 };
 
+#endif
 #endif

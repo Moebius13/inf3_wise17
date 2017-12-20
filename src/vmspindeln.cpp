@@ -9,6 +9,9 @@ class SpindelAuftrag:public Auftrag {
 	SpindelAuftrag(DrehteilAuftrag* A):Auftrag((Auftrag*)A){
 	    DLZ=1*DAY_FACT;
 	}
+	void print(const char* prefix){
+	    printf("%sSpindelfertigungsauftrag #%i\n",prefix,this);
+	}
 };
 
 #endif

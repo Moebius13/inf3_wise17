@@ -18,6 +18,13 @@ class DrehteilAuftrag:public Auftrag {
 	    Antriebswellen = new WellenAuftrag(this);
 	    Spindeln = new SpindelAuftrag(this);
 	}
+	void print(const char* prefix){
+	    printf("%sDrehteilauftrag #%i\n",prefix,this);
+	    Antriebswellen->print("|||");
+	    printf("%s/\n",prefix);
+	    Spindeln->print("|||");
+	    printf("%s/\n",prefix);
+	}
 	~DrehteilAuftrag(){
 	    delete Antriebswellen;
 	    delete Spindeln;

@@ -15,6 +15,11 @@ class ElektroAuftrag:public Auftrag {
 	void makeSub(){
 	    Schaltschrank = new SchaltschrankAuftrag(this);
 	}
+	void print(const char* prefix){
+	    printf("%sElektrikauftrag #%i\n",prefix,this);
+	    Schaltschrank->print("|||");
+	    printf("%s/\n",prefix);
+	}
 	~ElektroAuftrag(){
 	    delete Schaltschrank;
 	}

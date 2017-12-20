@@ -1,3 +1,4 @@
+#ifndef PRODUKT
 #ifndef PRODUKT_H
 #define PRODUKT_H
 #include "auftrag.cpp"
@@ -19,4 +20,5 @@ class Produkt:public Auftrag {
 	~Produkt();
 };
 
+#endif
 #endif

@@ -1,3 +1,4 @@
+#ifndef AUFTRAG
 #ifndef AUFTRAG_H
 #define AUFTRAG_H
 #include "eckdaten.cpp"
@@ -15,7 +16,8 @@ class Auftrag:public Eckdaten {
 	Auftrag(const Auftrag* Ref);
 	const void makeSub();
 	time_t* earliestDeadline();
-	void print();
+	void print(const char* prefix);
 };
 
+#endif
 #endif
