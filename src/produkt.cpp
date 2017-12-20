@@ -31,7 +31,7 @@ class Produkt:public Auftrag {
 	    return t1+this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sProdukt #%i\n",prefix,this);
+	    printf("%sProdukt #%i[%s]\n",prefix,this,this->Status);
 	    Drehteile->print("||");
 	    printf("%s/\n",prefix);
 	    Kubischer->print("||");

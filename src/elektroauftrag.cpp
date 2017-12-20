@@ -19,7 +19,7 @@ class ElektroAuftrag:public Auftrag {
 	    return t1+this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sElektrikauftrag #%i\n",prefix,this);
+	    printf("%sElektrikauftrag #%i[%s]\n",prefix,this,this->Status);
 	    Schaltschrank->print("|||");
 	    printf("%s/\n",prefix);
 	}

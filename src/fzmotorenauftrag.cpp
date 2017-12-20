@@ -14,7 +14,7 @@ class MotorAuftrag:public Auftrag{
 	    return this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sMotor #%i\n",prefix,this);
+	    printf("%sMotor #%i[%s]\n",prefix,this,this->Status);
 	}
 };
 

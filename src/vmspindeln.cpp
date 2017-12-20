@@ -14,7 +14,7 @@ class SpindelAuftrag:public Auftrag {
 	    return this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sSpindelfertigungsauftrag #%i\n",prefix,this);
+	    printf("%sSpindelfertigungsauftrag #%i[%s]\n",prefix,this,this->Status);
 	}
 };
 

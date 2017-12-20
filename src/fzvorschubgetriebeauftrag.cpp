@@ -14,7 +14,7 @@ class GetriebeAuftrag:public Auftrag{
 	    return this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sVorschubgetriebe #%i\n",prefix,this);
+	    printf("%sVorschubgetriebe #%i[%s]\n",prefix,this,this->Status);
 	}
 
 };

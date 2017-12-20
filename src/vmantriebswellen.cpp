@@ -14,7 +14,7 @@ class WellenAuftrag:public Auftrag {
 	    return this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sAntriebswellenfertigungsauftrag #%i\n",prefix,this);
+	    printf("%sAntriebswellenfertigungsauftrag #%i[%s]\n",prefix,this,this->Status);
 	}
 };
 

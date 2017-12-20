@@ -17,6 +17,7 @@ class Auftrag: public Eckdaten {
 	Auftrag(const Auftrag* Ref){
 	    //  Eckdaten(); //not needed, no-arg constructor call is automatic if nothing else is goven
 	    metaRef = Ref;
+	    this->Status="Pending";
 	} 
 	time_t makeSub(const time_t startTime);
 	time_t* earliestDeadline();

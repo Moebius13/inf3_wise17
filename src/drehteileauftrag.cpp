@@ -24,7 +24,7 @@ class DrehteilAuftrag:public Auftrag {
 	    return t1+this->DLZ;
 	}	
 	void print(const char* prefix){
-	    printf("%sDrehteilauftrag #%i\n",prefix,this);
+	    printf("%sDrehteilauftrag #%i[%s]\n",prefix,this,this->Status);
 	    Antriebswellen->print("|||");
 	    printf("%s/\n",prefix);
 	    Spindeln->print("|||");

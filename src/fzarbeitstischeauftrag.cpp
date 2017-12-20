@@ -14,7 +14,7 @@ class ArbeitsTischAuftrag:public Auftrag{
 	    return this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sArbeitstisch #%i\n",prefix,this);
+	    printf("%sArbeitstisch #%i[%s]\n",prefix,this,this->Status);
 	}
 };
 

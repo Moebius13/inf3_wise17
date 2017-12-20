@@ -34,7 +34,7 @@ class KubischerAuftrag:public Auftrag {
 	    return t1+this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sTeilfertigungsauftrag #%i\n",prefix,this);
+	    printf("%sTeilfertigungsauftrag #%i[%s]\n",prefix,this,this->Status);
 	    Arbeitstische->print("|||");
 	    printf("%s/\n",prefix);
 	    Motoren->print("|||");

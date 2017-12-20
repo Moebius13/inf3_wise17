@@ -14,7 +14,7 @@ class StaenderAuftrag:public Auftrag{
 	    return this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sMaschinenstaender #%i\n",prefix,this);
+	    printf("%sMaschinenstaender #%i[%s]\n",prefix,this,this->Status);
 	}
 };
 

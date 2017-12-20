@@ -20,7 +20,7 @@ int main(int argc, char** argv){
     top->setProdukt(prod);
     time_t* startDate=time(NULL);
     //MAGIC!
-    prod->makeSub(startDate);
+    top->DLZ=prod->makeSub(startDate);
     top->print("");
     printf("That's All Folks!\n");
     delete prod;

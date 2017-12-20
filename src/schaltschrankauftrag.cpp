@@ -14,7 +14,7 @@ class SchaltschrankAuftrag:public Auftrag {
 	    return this->DLZ;
 	}
 	void print(const char* prefix){
-	    printf("%sSchaltschrank #%i\n",prefix,this);
+	    printf("%sSchaltschrank #%i[%s]\n",prefix,this,this->Status);
 	}
 };
 
