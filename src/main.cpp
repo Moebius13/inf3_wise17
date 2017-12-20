@@ -20,7 +20,7 @@ int main(int argc, char** argv){
     //MAGIC!
     prod->makeSub();
     top->print("");
-    printf("/\n");
+    printf("That's All Folks!\n");
     delete prod;
     delete top;
     delete Alice;

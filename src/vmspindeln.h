@@ -1,4 +1,3 @@
-#ifndef SPINDELN
 #ifndef SPINDELN_H
 #define SPINDELN_H
 #include "auftrag.cpp"
@@ -10,5 +9,4 @@ class SpindelAuftrag:public Auftrag {
 	SpindelAuftrag(DrehteilAuftrag* A);
 };
 
-#endif
 #endif

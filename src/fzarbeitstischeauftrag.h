@@ -1,4 +1,3 @@
-#ifndef ARBTISCH
 #ifndef ARBTISCH_H
 #define ARBTISCH_H
 #include "auftrag.cpp"
@@ -10,5 +9,4 @@ class ArbeitsTischAuftrag:public Auftrag{
 	ArbeitsTischAuftrag(KubischerAuftrag* A);
 };
 
-#endif
 #endif

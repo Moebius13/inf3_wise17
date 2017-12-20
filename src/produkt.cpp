@@ -1,9 +1,9 @@
 #ifndef PRODUKT
 #define PRODUKT
 #include "auftrag.cpp"
-#include "drehteileauftrag.h"
-#include "kubischerauftrag.h"
-#include "elektroauftrag.h"
+#include "drehteileauftrag.cpp"
+#include "kubischerauftrag.cpp"
+#include "elektroauftrag.cpp"
 #include <stdio.h>
 
 class FertigungsAuftrag;

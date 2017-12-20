@@ -1,10 +1,10 @@
 #ifndef KUBISCH
 #define KUBISCH
 #include "auftrag.cpp"
-#include "fzarbeitstischeauftrag.h"
-#include "fzmotorenauftrag.h"
-#include "fzstaenderauftrag.h"
-#include "fzvorschubgetriebeauftrag.h"
+#include "fzarbeitstischeauftrag.cpp"
+#include "fzmotorenauftrag.cpp"
+#include "fzstaenderauftrag.cpp"
+#include "fzvorschubgetriebeauftrag.cpp"
 
 class Produkt;
 

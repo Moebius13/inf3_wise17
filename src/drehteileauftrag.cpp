@@ -1,8 +1,8 @@
 #ifndef DREHTEIL
 #define DREHTEIL
 #include "auftrag.cpp"
-#include "vmantriebswellen.h"
-#include "vmspindeln.h"
+#include "vmantriebswellen.cpp"
+#include "vmspindeln.cpp"
 
 class Produkt;
 

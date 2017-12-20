@@ -1,4 +1,3 @@
-#ifndef MOTOREN
 #ifndef MOTOREN_H
 #define MOTOREN_H
 #include "auftrag.cpp"
@@ -10,5 +9,4 @@ class MotorAuftrag:public Auftrag{
 	MotorAuftrag(KubischerAuftrag* A);
 };
 
-#endif
 #endif

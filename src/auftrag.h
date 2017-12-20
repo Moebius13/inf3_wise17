@@ -1,4 +1,3 @@
-#ifndef AUFTRAG
 #ifndef AUFTRAG_H
 #define AUFTRAG_H
 #include "eckdaten.cpp"
@@ -19,5 +18,4 @@ class Auftrag:public Eckdaten {
 	void print(const char* prefix);
 };
 
-#endif
 #endif
