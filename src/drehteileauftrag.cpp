@@ -1,6 +1,6 @@
-#ifndef _DREHTEIL
-#define _DREHTEIL
-#include "auftrag.h"
+#ifndef DREHTEIL
+#define DREHTEIL
+#include "auftrag.cpp"
 #include "vmantriebswellen.h"
 #include "vmspindeln.h"
 

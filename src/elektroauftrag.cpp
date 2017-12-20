@@ -1,6 +1,6 @@
-#ifndef _ELEKTRO
-#define _ELEKTRO
-#include "auftrag.h"
+#ifndef ELEKTRO
+#define ELEKTRO
+#include "auftrag.cpp"
 #include "schaltschrankauftrag.h"
 
 class Produkt;

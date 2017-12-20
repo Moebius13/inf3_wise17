@@ -1,6 +1,6 @@
-#ifndef _KUBISCH
-#define _KUBISCH
-#include "auftrag.h"
+#ifndef KUBISCH
+#define KUBISCH
+#include "auftrag.cpp"
 #include "fzarbeitstischeauftrag.h"
 #include "fzmotorenauftrag.h"
 #include "fzstaenderauftrag.h"

@@ -1,6 +1,6 @@
-#ifndef _SPINDELN_H
-#define _SPINDELN_H
-#include "auftrag.h"
+#ifndef SPINDELN_H
+#define SPINDELN_H
+#include "auftrag.cpp"
 
 class DrehteilAuftrag;
 

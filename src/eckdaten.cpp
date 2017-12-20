@@ -1,5 +1,5 @@
-#ifndef _ECKDATEN
-#define _ECKDATEN
+#ifndef ECKDATEN
+#define ECKDATEN
 #include <time.h>
 #include <string>
 

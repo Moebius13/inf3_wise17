@@ -1,5 +1,5 @@
-#ifndef _KUNDE
-#define _KUNDE
+#ifndef KUNDE
+#define KUNDE
 #include <iostream>
 #include <string>
 

@@ -1,6 +1,6 @@
-#ifndef _ARBTISCH
-#define _ARBTISCH
-#include "auftrag.h"
+#ifndef ARBTISCH
+#define ARBTISCH
+#include "auftrag.cpp"
 
 class KubischerAuftrag;
 

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include "kunde.h"
-#include "auftrag.h"
+#include "kunde.cpp"
+#include "auftrag.cpp"
 #include "produkt.h"
 
 using namespace std;

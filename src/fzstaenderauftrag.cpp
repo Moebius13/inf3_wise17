@@ -1,6 +1,6 @@
-#ifndef _STAENDER
-#define _STAENDER
-#include "auftrag.h"
+#ifndef STAENDER
+#define STAENDER
+#include "auftrag.cpp"
 
 class KubischerAuftrag;
 

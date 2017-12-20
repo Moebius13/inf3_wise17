@@ -1,6 +1,6 @@
-#ifndef _FERTIGUNG
-#define _FERTIGUNG
-#include "auftrag.h"
+#ifndef FERTIGUNG
+#define FERTIGUNG
+#include "auftrag.cpp"
 
 class Produkt;
 class Kunde;

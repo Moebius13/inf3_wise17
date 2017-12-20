@@ -1,5 +1,5 @@
-#ifndef _AUFTRAG
-#define _AUFTRAG
+#ifndef AUFTRAG
+#define AUFTRAG
 #include "eckdaten.cpp"
 #include <iostream>
 #include <stdio.h>

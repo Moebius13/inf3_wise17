@@ -1,6 +1,6 @@
-#ifndef _KUBISCH_H
-#define _KUBISCH_H
-#include "auftrag.h"
+#ifndef KUBISCH_H
+#define KUBISCH_H
+#include "auftrag.cpp"
 
 class Produkt;
 class ArbeitsTischAuftrag;

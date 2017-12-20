@@ -1,6 +1,6 @@
-#ifndef _WELLE
-#define _WELLE
-#include "auftrag.h"
+#ifndef WELLE
+#define WELLE
+#include "auftrag.cpp"
 
 class DrehteilAuftrag;
 

@@ -1,9 +1,10 @@
-#ifndef _DREHTEIL_H
-#define _DREHTEIL_H
+#ifndef DREHTEIL_H
+#define DREHTEIL_H
+#include "auftrag.cpp"
+#include "vmspindeln.h"
+#include "vmantriebswellen.h"
 
 class Produkt;
-class WellenAuftrag;
-class SpindelAuftrag;
 
 class DrehteilAuftrag:public Auftrag {
     private:
@@ -11,6 +12,7 @@ class DrehteilAuftrag:public Auftrag {
 	SpindelAuftrag* Spindeln;
     public:
 	DrehteilAuftrag(Produkt* P);
+	~DrehteilAuftrag();
 };
 
 #endif

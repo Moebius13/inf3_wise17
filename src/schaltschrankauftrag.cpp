@@ -1,6 +1,6 @@
-#ifndef _SCHALTSCHRANK
-#define _SCHALTSCHRANK
-#include "auftrag.h"
+#ifndef SCHALTSCHRANK
+#define SCHALTSCHRANK
+#include "auftrag.cpp"
 
 class ElektroAuftrag;
 

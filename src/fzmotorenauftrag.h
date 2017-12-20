@@ -1,6 +1,6 @@
-#ifndef _MOTOREN_H
-#define _MOTOREN_H
-#include "auftrag.h"
+#ifndef MOTOREN_H
+#define MOTOREN_H
+#include "auftrag.cpp"
 
 class KubischerAuftrag;
 

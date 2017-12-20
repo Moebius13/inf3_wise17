@@ -1,6 +1,6 @@
-#ifndef _VORSCHUB
-#define _VORSCHUB
-#include "auftrag.h"
+#ifndef VORSCHUB
+#define VORSCHUB
+#include "auftrag.cpp"
 
 class KubischerAuftrag;
 

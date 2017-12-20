@@ -1,6 +1,6 @@
-#ifndef _PRODUKT_H
-#define _PRODUKT_H
-#include "auftrag.h"
+#ifndef PRODUKT_H
+#define PRODUKT_H
+#include "auftrag.cpp"
 #include "drehteileauftrag.h"
 #include "kubischerauftrag.h"
 #include "elektroauftrag.h"
