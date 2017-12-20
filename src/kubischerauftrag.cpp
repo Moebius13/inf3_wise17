@@ -18,11 +18,20 @@ class KubischerAuftrag:public Auftrag {
 	KubischerAuftrag(Produkt* P):Auftrag((Auftrag*)P){
 	    DLZ=1*DAY_FACT;
 	}
-	void makeSub(){
+	time_t makeSub(const time_t start){
 	    Arbeitstische = new ArbeitsTischAuftrag(this);
+	    time_t t1=Arbeitstische->makeSub(start);
 	    Motoren = new MotorAuftrag(this);
+	    time_t t2=Motoren->makeSub(start);
+	    t1=t1<t2?t2:t1;
 	    Staender = new StaenderAuftrag(this);
+	    t2=Staender->makeSub(start);
+	    t1=t1<t2?t2:t1;
 	    Vorschubgetriebe = new GetriebeAuftrag(this);
+	    t2=Vorschubgetriebe->makeSub(start);
+	    t1=t1<t2?t2:t1;
+	    this->Fertigungsbeginn=t1+start;
+	    return t1+this->DLZ;
 	}
 	void print(const char* prefix){
 	    printf("%sTeilfertigungsauftrag #%i\n",prefix,this);

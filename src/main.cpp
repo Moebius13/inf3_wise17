@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <time.h>
+#include <stdlib.h>
 #include "kunde.cpp"
 #include "auftrag.cpp"
 #include "produkt.cpp"
@@ -17,8 +18,9 @@ int main(int argc, char** argv){
     FertigungsAuftrag* top = new FertigungsAuftrag(Alice);
     Produkt* prod = new Produkt(top);
     top->setProdukt(prod);
+    time_t* startDate=time(NULL);
     //MAGIC!
-    prod->makeSub();
+    prod->makeSub(startDate);
     top->print("");
     printf("That's All Folks!\n");
     delete prod;

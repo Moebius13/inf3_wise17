@@ -18,13 +18,17 @@ class Produkt:public Auftrag {
 	    DLZ=3*DAY_FACT;
 	}
 	//apparently this ^ is how to call superclass constructors according to stackoverflow - kinda wierd
-	void makeSub(){
+	time_t makeSub(const time_t start){
 	    Drehteile = new DrehteilAuftrag(this);
+	    time_t t1=Drehteile->makeSub(start);
 	    Kubischer = new KubischerAuftrag(this);
+	    time_t t2=Kubischer->makeSub(start);
+	    t1=t1<t2?t2:t1;
 	    Elektro   = new ElektroAuftrag(this);
-	    Drehteile->makeSub();
-	    Kubischer->makeSub();
-	    Elektro->makeSub();
+	    t2=Elektro->makeSub(start);
+	    t1=t1<t2?t2:t1;
+	    this->Fertigungsbeginn=t1+start;
+	    return t1+this->DLZ;
 	}
 	void print(const char* prefix){
 	    printf("%sProdukt #%i\n",prefix,this);

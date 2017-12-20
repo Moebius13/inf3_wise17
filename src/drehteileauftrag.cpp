@@ -14,10 +14,15 @@ class DrehteilAuftrag:public Auftrag {
 	DrehteilAuftrag(Produkt* P):Auftrag((Auftrag*)P){
 	    this->DLZ=1*DAY_FACT;
 	}
-	void makeSub(){
+	time_t makeSub(const time_t start){
 	    Antriebswellen = new WellenAuftrag(this);
+	    time_t t1=Antriebswellen->makeSub(start);
 	    Spindeln = new SpindelAuftrag(this);
-	}
+	    time_t t2=Spindeln->makeSub(start);
+	    t1=t1<t2?t2:t1;
+	    this->Fertigungsbeginn=t1+start;
+	    return t1+this->DLZ;
+	}	
 	void print(const char* prefix){
 	    printf("%sDrehteilauftrag #%i\n",prefix,this);
 	    Antriebswellen->print("|||");

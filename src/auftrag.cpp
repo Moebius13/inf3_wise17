@@ -18,7 +18,7 @@ class Auftrag: public Eckdaten {
 	    //  Eckdaten(); //not needed, no-arg constructor call is automatic if nothing else is goven
 	    metaRef = Ref;
 	} 
-	const void makeSub();
+	time_t makeSub(const time_t startTime);
 	time_t* earliestDeadline();
 	void print(const char* prefix) {
 	    printf("%p\n",metaRef);

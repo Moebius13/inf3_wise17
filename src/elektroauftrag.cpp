@@ -12,8 +12,11 @@ class ElektroAuftrag:public Auftrag {
 	ElektroAuftrag(Produkt* P):Auftrag((Auftrag*) P){
 	    DLZ=8*DAY_FACT;
 	}
-	void makeSub(){
+	time_t makeSub(const time_t start){
 	    Schaltschrank = new SchaltschrankAuftrag(this);
+	    time_t t1=Schaltschrank->makeSub(start);
+	    this->Fertigungsbeginn=t1+start;
+	    return t1+this->DLZ;
 	}
 	void print(const char* prefix){
 	    printf("%sElektrikauftrag #%i\n",prefix,this);

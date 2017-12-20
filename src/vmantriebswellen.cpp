@@ -9,6 +9,10 @@ class WellenAuftrag:public Auftrag {
 	WellenAuftrag(DrehteilAuftrag* A):Auftrag((Auftrag*)A){
 	    DLZ=1*DAY_FACT;
 	}
+	time_t makeSub(const time_t start){
+	    this->Fertigungsbeginn=start;
+	    return this->DLZ;
+	}
 	void print(const char* prefix){
 	    printf("%sAntriebswellenfertigungsauftrag #%i\n",prefix,this);
 	}
