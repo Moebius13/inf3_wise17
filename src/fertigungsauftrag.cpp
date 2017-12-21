@@ -1,5 +1,6 @@
 #ifndef FERTIGUNG
 #define FERTIGUNG
+#include <time.h>
 #include "auftrag.cpp"
 #include "produkt.cpp"
 
@@ -17,8 +18,9 @@ class FertigungsAuftrag:public Auftrag {
 	    Endprodukt=P;
 	}
 	void print(const char* prefix){
-	    printf("Fertigungsauftrag #%i für Produkt #%i[%s]\n",this,Endprodukt,this->Status);
+	    printf("%sFertigungsauftrag #%i für Produkt #%i[%s]\n",prefix,this,Endprodukt,this->Status);
 	    printf("%sFertigungsbeginn: %s",prefix,ctime(&Fertigungsbeginn));
+	    printf("%sFrühester Fertigungszeitpunkt: %s",prefix,ctime(&Deadline));
 	    printTime(prefix);
 	    Endprodukt->print("|");
 	    printf("/\n");

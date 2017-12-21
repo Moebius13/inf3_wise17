@@ -10,6 +10,8 @@
 using namespace std;
 
 int main(int argc, char** argv){
+    
+    
     cout<<"Testing Object 'Kunde'"<<endl;
     Kunde* Alice = new Kunde("Alice",2);
     //Kunde().neu_Kunde("Bob", 1);
@@ -18,9 +20,11 @@ int main(int argc, char** argv){
     FertigungsAuftrag* top = new FertigungsAuftrag(Alice);
     Produkt* prod = new Produkt(top);
     top->setProdukt(prod);
-    time_t* startDate=time(NULL);
+    top->Fertigungsbeginn=time(NULL);
+    //time_t* startDate=time(NULL);
     //MAGIC!
-    top->DLZ=prod->makeSub(startDate);
+    top->DLZ=prod->makeSub(top->Fertigungsbeginn);
+    top->Deadline=top->Fertigungsbeginn + top->DLZ;
     top->print("");
     printf("That's All Folks!\n");
     delete prod;
